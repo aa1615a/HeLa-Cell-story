@@ -1,0 +1,316 @@
+/* ------------------------------------------------------------ */
+/* imports and utilities */
+
+/* 3rd-party CSS files */
+@import 'vendor/h5bp-head.css';
+@import 'vendor/normalize.css';
+@import 'vendor/h5bp-tail.css';
+
+/* use a more intuitive box sizing model (http://is.gd/wNVjAo) */
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+/* Scale down images and embedded videos so they don't overflow their parents */
+img, object { max-width: 100%; }
+
+/*	Development/layout aid. Remove the comments
+	on this rule in order to draw boxes around DIVs
+	and other elements used for layout. */
+/* 
+div, main, article, section, aside, hgroup, header, footer, address, nav {
+	border: 1px solid rgba(255,0,0,0.15) !important;
+	background: rgba(255,0,0,0.05) !important;		
+}
+*/
+
+
+/* ------------------------------------------------------------ */
+/* start project-specifc styles below this line */
+
+body {
+    font-family: 'Zilla Slab', serif;
+	font-size: 18px;
+	line-height: 1.5em;
+	color: #250b05;
+	background-color: #f2e4e2 /*#fff0d8*/;
+	max-width: 1500px;
+}
+
+video {
+	width: 100%    !important;
+  height: auto   !important;
+}
+
+h1 {
+    font-family: 'Special Elite', cursive;
+    color: #952B14;
+    line-height: 100px;
+    padding-top: 1em;
+    font-size: 5vw;
+	margin: auto;
+}
+
+h2{
+    font-family: 'Special Elite', cursive;
+    font-size: 25px;
+    color: #952B14;
+    padding-top: 35px;
+    padding-bottom: 25px;
+    text-align: center;
+    letter-spacing: .2em;
+   }
+
+h3 {
+    font-family: 'Zilla Slab', serif;
+    font-size: 23px;
+    line-height: 28px;
+    color: white;
+    font-weight: 400;
+}
+
+h4 {
+	font-family: 'Zilla Slab', serif;
+	font-size: 20px;
+	color: #952B14;
+	font-weight: 700;
+	letter-spacing: 1px;
+}
+
+p {
+	max-width: 800px;
+	width: 65%;
+	padding-bottom: 15px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+img{
+	width: 100%;
+}
+
+figure {
+	margin: 0px;
+}
+figcaption {
+	font-size: 14px;
+}
+
+figcaption.bioimg {
+	font-size: 12px;
+	text-align: center;
+	color: white;
+}
+
+figcaption.fullwidth{
+	margin-left: 2em;
+}
+
+/* ------------------------------------------------------------ */
+/* DIVS */
+
+div.introtext {
+	text-align: center;
+	padding-bottom: 100px;
+	margin: auto;
+}
+
+h1.widetxt{
+	letter-spacing: .9em;
+	line-height: 70px;
+	font-size: 5vw;
+	position: relative;
+	left: 0.3em;
+}
+
+.separator{
+	width: 300px;
+	border-top: 1.5px solid #952B14;
+	border-bottom: 1.5px solid #952B14;
+	margin: auto;
+	margin-bottom: 70px;
+	margin-top: 100px;
+}
+
+.parallax {
+	/* height: 600px; */
+}
+
+.container {
+	margin: 2em;
+	padding: .5em 3em .5em 3em;
+	background-color: #f2e4e2;
+}
+
+.homepage {
+	background-color: #EFCF9D;
+}
+
+div.bodyimg {
+	max-width: 800px;
+	display: grid;
+  	grid-template-columns: 1fr 3fr;
+  	grid-column-gap: 2em;
+}
+
+div.bodyimg2 {
+	max-width: 800px;
+	display: grid;
+  	grid-template-columns: 3fr 1fr;
+  	grid-column-gap: 2em;
+}
+
+div.pullquote {
+	padding-top: 1px;
+	padding-bottom: 1px;
+	width: 500px;
+	margin: auto;
+}
+
+div.bioquote1 {
+	background-color: #952b14/*#60A8C7*/;
+	width: 100%;
+	padding: 20px 80px 20px 80px;
+	display: grid;
+  	grid-template-columns: 1fr 3fr;
+  	grid-column-gap: 2em;
+  	justify-items: center;
+  	align-items: center;
+}
+
+div.bioquote2 {
+	background-color: #952b14;
+	width: 100%;
+	padding: 50px 80px 50px 80px;
+	display: grid;
+  	grid-template-columns: 2fr 2fr;
+  	grid-column-gap: 3em;
+  	justify-items: center;
+  	align-items: center;
+}
+
+div.bioquote3 {
+	background-color: #952b14;
+	width: 100%;
+	padding: 20px 80px 20px 80px;
+	display: grid;
+  	grid-template-columns: 3fr 1fr;
+  	grid-column-gap: 2em;
+  	justify-items: center;
+  	align-items: center;
+}
+
+/* ------------------------------------------------------------ */
+/* START BUTTON */
+
+button {
+  background-color: #952B14; /* Green */
+  border: none;
+  border-radius: 8px;
+  color: white;
+  padding: 20px 35px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: 'Special Elite', cursive;
+  font-size: 40px;
+  letter-spacing: .10em;
+  margin: 4px 4px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+  }
+
+a {
+  	text-decoration: none;
+  }
+
+button:hover {
+  background-color: #ca958a;
+  color: white;
+	}
+
+#start {
+	display: grid;
+	grid-template-rows: 1fr; 
+	grid-template-columns: 1fr 1fr 1fr;
+}
+
+.item-1 {
+	grid-column-start: 2;
+	justify-items: center;
+  	align-items: center;
+  	padding-top: 15px;
+  	text-align: center;
+}
+
+.item-2 {
+	grid-column-start: span 3;
+	justify-items: center;
+  	align-items: center;
+  	margin-left: auto;
+  	text-align: center;
+}
+
+/* ------------------------------------------------------------ */
+/* NAV BAR */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  display: grid;
+  grid-template-columns: -webkit-min-content 1fr;
+  grid-template-columns: min-content 1fr;
+  font-family: 'Zilla Slab', serif;
+}
+
+nav {
+  white-space: nowrap;
+  background: #d7afa7;
+}
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+/* Only stick if you can fit */
+@media (min-height: 300px) {
+  nav ul {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+  }
+}
+nav ul li a {
+  display: block;
+  padding: 0.5rem 1rem;
+  color: #250b05;
+  text-decoration: none;
+}
+nav ul li a.current {
+  background: #bd7a6c;
+}
+main {
+  padding-bottom: 40rem;
+}
+section {
+  padding: 2rem;
+  margin: 0 0 2rem 0;
+}
+
+
+/* ------------------------------------------------------------ */
+/* media query containing styles for larger screens */
+@media (min-width: 720px) {
+	
+	/* container on larger screens 
+	.container {
+		width: 90%;
+		max-width: 1200px;
+		margin: 2em;
+		margin-right: auto;
+		margin-left: auto;
+		padding: 2em;
+	}
+
+} /* end media query */
