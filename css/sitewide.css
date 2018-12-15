@@ -229,17 +229,18 @@ button:hover {
 	}
 
 #start {
-	display: grid;
+	/*display: grid;
 	grid-template-rows: 1fr; 
-	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-columns: 1fr 1fr 1fr; */
 }
 
 .item-1 {
-	grid-column-start: 2;
-	justify-items: center;
-  	align-items: center;
-  	padding-top: 15px;
-  	text-align: center;
+	width: 200px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 15px;
+  text-align: center;
 }
 
 .item-2 {
@@ -262,6 +263,10 @@ body {
   grid-template-columns: -webkit-min-content 1fr;
   grid-template-columns: min-content 1fr;
   font-family: 'Zilla Slab', serif;
+}
+
+.homepage {
+  display: block;
 }
 
 nav {
@@ -290,13 +295,7 @@ nav ul li a {
 nav ul li a.current {
   background: #bd7a6c;
 }
-main {
-  padding-bottom: 40rem;
-}
-section {
-  padding: 2rem;
-  margin: 0 0 2rem 0;
-}
+
 
 
 /* ------------------------------------------------------------ */
